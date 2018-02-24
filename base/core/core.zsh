@@ -121,15 +121,15 @@ __zplug::core::core::prepare()
             return 1
         fi
 
-        if ! __zplug::base::base::git_version 1.7; then
-            __zplug::io::print::f \
-                --die \
-                --zplug \
-                --error \
-                "git command not found in \$PATH\n" \
-                "zplug depends on git 1.7 or later.\n"
-            return 1
-        fi
+        #if ! __zplug::base::base::git_version 1.7; then
+            #__zplug::io::print::f \
+                #--die \
+                #--zplug \
+                #--error \
+                #"git command not found in \$PATH\n" \
+                #"zplug depends on git 1.7 or later.\n"
+            #return 1
+        #fi
 
         if ! __zplug::utils::awk::available; then
             __zplug::io::print::f \
